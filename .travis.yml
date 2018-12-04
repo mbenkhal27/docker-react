@@ -6,6 +6,7 @@ services:
 
 
 before_install:
+  - gem install bundler
   - docker build  -t mbenkhal/docker-react -f Dockerfile.dev .
 
 scripts:
